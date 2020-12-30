@@ -1,30 +1,25 @@
-import React from 'react'
-import clsx from 'clsx';
+import React from "react";
+import clsx from "clsx";
 
-import Success from '../Success';
+import Success from "../Success";
 
-import styles from './index.module.css';
+import styles from "./index.module.css";
 
-const index = () => {
-    return (
-        <div className={clsx(styles.box)}>
-             <span className={clsx(styles.tickAlign)}>
-          
-          <Success />
-          </span>
+const index = ({ description, title }) => {
+  return (
+    <div className={clsx(styles.box)}>
+      <span className={clsx(styles.tickAlign)}>
+        <Success />
+      </span>
 
-            <span className={clsx(styles.headingAlign)}>
-              Test stat
-              </span>
-              <span>
-                  <div className = {clsx(styles.contentAlign)}>
-                      <p>sddikffbhsdjkdfvbbsjkfbnwekinbfkwnfdnbfwsjeffsdljfnsdmkjnfsdjnckseneknwnw</p>
-                      </div>
-                  </span>
-             
-          
+      <span className={clsx(styles.headingAlign)}>{title}</span>
+      <span>
+        <div className={clsx(styles.contentAlign)}>
+          <p>{description}</p>
         </div>
-    )
-}
+      </span>
+    </div>
+  );
+};
 
-export default index
+export default index;
