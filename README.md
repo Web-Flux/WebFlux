@@ -31,4 +31,4 @@ WebFlux has a NextJS frontend  ⚛️  hosted with Vercel, and a Flask Back-End�
 
 ## 👨‍🏭  Who are we?
 
-The Project was built by [Sarthak Kundra](https://github.com/sarthakkundra), [Saket Upadhyay](https://github.com/Saket-Upadhyay), [Saphal Patro](https://github.com/saphal1998) and [Harsh Mishra](https://github.com/harshcasper].
+The Project was built by [Sarthak Kundra](https://github.com/sarthakkundra), [Saket Upadhyay](https://github.com/Saket-Upadhyay), [Saphal Patro](https://github.com/saphal1998) and [Harsh Mishra](https://github.com/harshcasper).
