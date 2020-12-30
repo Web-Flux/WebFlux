@@ -41,7 +41,7 @@ const HomePage = () => {
       <Link href="/report">
         <a>
           {" "}
-          <SearchButton />{" "}
+          {/* <SearchButton />{" "} */}
         </a>
       </Link>
     </div>

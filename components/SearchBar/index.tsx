@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import { Input } from "@chakra-ui/react";
 import clsx from "clsx";
+import  Link  from 'next/link';
 
 import SEOContext from "../../context/SEO/SEOContext";
 
@@ -14,6 +15,9 @@ const index = () => {
     seoContext.setUrl(url);
   };
 
+  const handleClick = () => {
+    seoContext.getReport(url);
+  }
   return (
     <div>
       <Input
@@ -24,6 +28,10 @@ const index = () => {
         variant="outline"
         placeholder="http://www.example.com"
       />
+      <br></br>
+      <Link href="/report">
+      <a><button className={styles.glowOnHover} onClick={handleClick}>Generate Report</button></a>
+      </Link>
     </div>
   );
 };
