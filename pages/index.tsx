@@ -9,9 +9,8 @@ import HomePage from "./HomePage";
 
 export default function Home() {
   return (
-    <ChakraProvider>
-      <SEOState>
-        <CSSReset />
+  
+      
         <div className={styles.container}>
           <Head>
             <title>SEO Enhancer</title>
@@ -20,7 +19,5 @@ export default function Home() {
 
           <HomePage />
         </div>
-      </SEOState>
-    </ChakraProvider>
   );
 }
