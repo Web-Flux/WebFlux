@@ -10,10 +10,16 @@
 }
 
 .tickAlign{
-	margin-top: 30px;
+	margin-top: 50px;
 	float: left;
+	margin-right: 20px;
 }
 
 .headingAlign{
 	font-size: 25px;
+}
+
+.contentAlign {
+	margin: 20px auto;
+	text-align: left;
 }
