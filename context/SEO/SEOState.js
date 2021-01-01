@@ -10,15 +10,15 @@ const SEOState = (props) => {
     url: null,
     maxScore: null,
     scored: null,
-    page: [],
+    pages: [],
     site: {},
-    loading: false,
+    loading: true,
   };
 
   const [state, dispatch] = useReducer(SEOReducer, initialState);
 
-  const setLoading = () => {
-    dispatch({ type: SET_LOADING });
+  const setLoading = (value) => {
+    dispatch({ type: SET_LOADING, payload: value });
   };
 
   const setUrl = (url) => {
@@ -27,7 +27,7 @@ const SEOState = (props) => {
 
   const getReport = async (url) => {
     console.log("URL" + url);
-    setLoading();
+    // setLoading(true);
     const response = await client.get("/scan", {
       params: {
         site: url,
@@ -36,8 +36,9 @@ const SEOState = (props) => {
         'content-type': 'text/plain'
       }
     });
-    console.log(response);
+    console.log(response.data);
     dispatch({ type: GET_REPORT, payload: response.data });
+    setLoading(false);
   };
 
   return (

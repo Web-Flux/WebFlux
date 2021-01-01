@@ -5,7 +5,7 @@ const reducer = (state, action) => {
     case SET_LOADING:
       return {
         ...state,
-        loading: true,
+        loading: action.payload,
       };
 
     case SET_URL:
