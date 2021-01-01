@@ -2,14 +2,22 @@ import React from "react";
 import clsx from "clsx";
 
 import Success from "../Success";
+import Warning from "../Warning";
 
 import styles from "./index.module.css";
+import { ReportCategory } from "../types";
 
-const index = ({ description, title }) => {
+interface ReportCardProps {
+  description: string;
+  title: string;
+  category: ReportCategory;
+}
+
+const index = ({ description, title, category }) => {
   return (
     <div className={clsx(styles.box)}>
       <span className={clsx(styles.tickAlign)}>
-        <Success />
+        {category === ReportCategory.success ? <Success /> : <Warning />}
       </span>
 
       <span className={clsx(styles.headingAlign)}>{title}</span>

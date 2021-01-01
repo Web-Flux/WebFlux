@@ -15,9 +15,13 @@ const reducer = (state, action) => {
       };
 
     case GET_REPORT:
+      const { max_score, pages, scored, site } = action.payload;
       return {
         ...state,
-        ...action.payload,
+        maxScore: max_score,
+        pages,
+        scored,
+        site,
       };
     default:
       return state;

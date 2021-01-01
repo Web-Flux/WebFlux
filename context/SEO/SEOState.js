@@ -26,17 +26,14 @@ const SEOState = (props) => {
   };
 
   const getReport = async (url) => {
-    console.log("URL" + url);
-    // setLoading(true);
     const response = await client.get("/scan", {
       params: {
         site: url,
       },
       headers: {
-        'content-type': 'text/plain'
-      }
+        "content-type": "text/plain",
+      },
     });
-    console.log(response.data);
     dispatch({ type: GET_REPORT, payload: response.data });
     setLoading(false);
   };
@@ -47,7 +44,7 @@ const SEOState = (props) => {
         maxScore: state.maxScore,
         scored: state.scored,
         loading: state.loading,
-        page: state.page,
+        pages: state.pages,
         site: state.site,
         getReport,
         setUrl,
