@@ -66,7 +66,7 @@ const index = (props) => {
       <div>
         <Center className={styles.totalScore}>
           <CircularProgress
-            value={score}
+            value={parseFloat(score)}
             thickness="15px"
             size="100px"
             color="#0edaff"
