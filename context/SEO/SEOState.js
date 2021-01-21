@@ -34,8 +34,8 @@ const SEOState = (props) => {
         "content-type": "text/plain",
       },
     });
-    dispatch({ type: GET_REPORT, payload: response.data });
     setLoading(false);
+    dispatch({ type: GET_REPORT, payload: response.data });
   };
 
   return (
