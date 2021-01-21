@@ -16,10 +16,25 @@
 }
 
 .headingAlign{
-	font-size: 25px;
+	font-size: 1.2rem;
 }
 
 .contentAlign {
-	margin: 20px auto;
-	text-align: left;
+	font-size: 0.75rem;
+	margin: 1.1rem auto;
+	text-align: center;
+}
+
+@media all and (max-width: 699px) {
+	.tickAlign{
+		display: none;
+	}
+
+	.headingAlign{
+		font-size: 0.7rem;
+	}
+
+	.contentAlign{
+		font-size: 0.5rem;
+	}
 }

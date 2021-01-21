@@ -23,7 +23,8 @@ const index = ({ description, title, category }) => {
       <span className={clsx(styles.headingAlign)}>{title}</span>
       <span>
         <div className={clsx(styles.contentAlign)}>
-          <p>{description}</p>
+          
+          <p>{description && description.length > 50 ? description.slice(0,  35) : description}</p>
         </div>
       </span>
     </div>
