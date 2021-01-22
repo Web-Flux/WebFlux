@@ -1,28 +1,54 @@
-import React from 'react'
+import React from "react";
 
-import { ChakraProvider, SimpleGrid, CircularProgress, CircularProgressLabel, Center } from '@chakra-ui/react';
+import {
+  ChakraProvider,
+  SimpleGrid,
+  CircularProgress,
+  CircularProgressLabel,
+  Center,
+} from "@chakra-ui/react";
 
+import ReportCard from "../../components/ReportCard";
+import Toggle from "../../components/Toggle";
+import SEOState from "../../context/SEO/SEOState";
+import SEOContext from "../../context/SEO/SEOContext";
+import response from "../../response";
 
-import ReportCard from  '../../components/ReportCard';
-import Toggle from '../../components/Toggle';
-
-import styles from './index.module.css';
-const index = () => {
-    return (
-        <ChakraProvider>
+import styles from "./index.module.css";
+const index = (props) => {
+  const seoContext = React.useContext(SEOContext);
+  const { max_score, pages, scored, site } = response;
+  const score = ((scored * 100) / max_score).toPrecision(3);
+  return (
+    <ChakraProvider>
+      <SEOState>
         <div>
-            <Center className={styles.totalScore}>
-            <CircularProgress value = {50} thickness="15px" size="100px" color="#0edaff">
-                <CircularProgressLabel>50</CircularProgressLabel>
+          <Center className={styles.totalScore}>
+            <CircularProgress
+              value={score}
+              thickness="15px"
+              size="100px"
+              color="#0edaff"
+            >
+              <CircularProgressLabel>{score}</CircularProgressLabel>
             </CircularProgress>
-            </Center>
-            <Toggle />
-            <SimpleGrid  className={styles.grid} columns={2}  spacing={30}>
-            <ReportCard />
-            </SimpleGrid>
+          </Center>
+          <Toggle />
+          <SimpleGrid className={styles.grid} columns={2} spacing={30}>
+            {pages.map((page, idx) => {
+              return (
+                <ReportCard
+                  key={idx}
+                  description={page.description}
+                  title={page.title}
+                />
+              );
+            })}
+          </SimpleGrid>
         </div>
-        </ChakraProvider>
-    )
-}
+      </SEOState>
+    </ChakraProvider>
+  );
+};
 
-export default index
+export default index;
