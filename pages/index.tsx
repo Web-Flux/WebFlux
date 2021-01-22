@@ -1,6 +1,7 @@
 import Head from 'next/head'
+import { ChakraProvider, CSSReset } from '@chakra-ui/react';
 import styles from '../styles/Home.module.css'
-import { ThemeProvider, theme, ChakraProvider, CSSReset } from '@chakra-ui/react';
+
 
 import HomePage from './HomePage';
 
