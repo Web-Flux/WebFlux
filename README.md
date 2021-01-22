@@ -1,34 +1,34 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## 🙋 What is WebFlux ?
 
-## Getting Started
+WebFlux intends to be a single, unified platform for people looking to avail advanced Search Engine Optimization and increase their Digital Performance over the Web  👨‍💻
 
-First, run the development server:
+WebFlux have been introduced to suggest Web Optimizations for the App that can speed up operations and boost productivity  ⚡
 
-```bash
-npm run dev
-# or
-yarn dev
+## 💡  Why did we build it?
+
+As Frontend Developers, Performance plays an important part for Ranking and User Experience. The priority is such that it cannot be avoided any longer. WebFlux provides a Web-based Software as a Service (SaaS) for you to scrap you Website and auto-suggest improvements you can make to improve your Optimization Ranking  ♾️
+
+With this Application, we aim to have a  unified  tool to improve your SEO Ranking with real-time optimizations, that you can fix as a Developer. Sounds interesting? Well it is  🔥
+
+## 🌐  Where can I find it?
+
+Find our Open API on [chintukiapi.herokuapp.com](https://chintukiapi.herokuapp.com/). Too long to type? Fret not! We are bringing our custom domain with a deployed Client-Side App on a custom domain 🌠
+
+Would you like to try it out? It's pretty easy. Move over to [chintukiapi.herokuapp.com](https://chintukiapi.herokuapp.com/) and you will find a detailed instruction around to work with it. Wish to take a look at a demo? 
+
+Here is a [Typing Game](http://fastcoder.netlify.com/), that you will love. Let's see how it fares on SEO Terms: 
+
 ```
+https://chintukiapi.herokuapp.com/scan?site=https://fastcoder.netlify.com/
+```
+Paste this on Browser or on an API Testing Tool like Postman/Restman. And with-hold the magic! 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+If you would like to try out the Web Application, you may need to build it from this Repository. 
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+## 💻  What did we use?
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+WebFlux has a NextJS frontend  ⚛️  hosted with Vercel, and a Flask Back-End🐍  hosted on Heroku. The UI is based on Chakra UI Components, while the Flask Application uses core Web Scrapping Scripts for analyzing the Search Engine Optimization  💽
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## 👨‍🏭  Who are we?
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The Project was built by [Sarthak Kundra](https://github.com/sarthakkundra), [Saket Upadhyay](https://github.com/Saket-Upadhyay), [Saphal Patro](https://github.com/saphal1998) and [Harsh Mishra](https://github.com/harshcasper].
