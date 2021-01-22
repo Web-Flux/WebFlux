@@ -29,6 +29,32 @@ If you would like to try out the Web Application, you may need to build it from 
 
 WebFlux has a NextJS frontend  ⚛️  hosted with Vercel, and a Flask Back-End🐍  hosted on Heroku. The UI is based on Chakra UI Components, while the Flask Application uses core Web Scrapping Scripts for analyzing the Search Engine Optimization  💽
 
+## 🛠️ Installation
+
+The project can be setup by following these instructions. Note that you must have `npm` and `pip` installed before proceeding further. You should ideally also be working in a virtual environment, such as Python's venv or the virtualenv module.
+
+### 🧱 Building dependencies
+
+To kick-start the Client Application on NextJS, follow these steps: 
+```
+$ git clone https://github.com/sarthakkundra/WebFlux.git
+$ cd WebFlux
+$ npm install
+$ npm run dev 
+```
+
+Running the Server is as easy. Make sure that you are in the Repository, and follow these steps: 
+
+```
+$ cd API_BE
+$ virtualenv env 
+$ env\Scripts\activate
+(env) $ pip install -r requirements.txt
+(env) $ python app.py
+```
+
+And the Server will kickstart on Port 5000. You can check out the Root to identify on how you can use the same.
+
 ## 👨‍🏭  Who are we?
 
 The Project was built by [Sarthak Kundra](https://github.com/sarthakkundra), [Saket Upadhyay](https://github.com/Saket-Upadhyay), [Saphal Patro](https://github.com/saphal1998) and [Harsh Mishra](https://github.com/harshcasper).
