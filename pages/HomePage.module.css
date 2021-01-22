@@ -1,0 +1,42 @@
+
+.animated {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(#007cf0, #00dfd8 );
+    position: relative;
+    z-index: 1;
+  }
+  
+  .animatedPlay{
+    animation: color-change 4s infinite;
+    animation-duration: 8s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: color-change;
+  }
+
+  .animatedPlayE{
+      animation-delay: 2s;
+  }
+
+  .animatedPlayO{
+      animation-delay: 4s;
+  }
+
+  @keyframes color-change {
+      0% , 16.67%, to {
+        opacity: 1;
+      }
+
+      33.33%, 83.33%{
+          opacity: 0;
+      }
+  }
