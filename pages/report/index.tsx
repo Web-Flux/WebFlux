@@ -20,8 +20,6 @@ const index = (props) => {
   const { max_score, pages, scored, site } = response;
   const score = ((scored * 100) / max_score).toPrecision(3);
   return (
-    <ChakraProvider>
-      <SEOState>
         <div>
           <Center className={styles.totalScore}>
             <CircularProgress
@@ -46,8 +44,6 @@ const index = (props) => {
             })}
           </SimpleGrid>
         </div>
-      </SEOState>
-    </ChakraProvider>
   );
 };
 
