@@ -34,13 +34,14 @@ const index = (props) => {
           <Toggle />
           <SimpleGrid className={styles.grid} columns={2} spacing={30}>
             {pages.map((page, idx) => {
+              if(page.description){
               return (
                 <ReportCard
                   key={idx}
                   description={page.description}
                   title={page.title}
                 />
-              );
+              );}
             })}
           </SimpleGrid>
         </div>

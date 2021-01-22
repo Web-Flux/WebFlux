@@ -8,6 +8,7 @@ const index = () => {
   const seoContext = useContext(SEOContext);
 
   const handleClick = () => {
+    console.log(seoContext.url)
     seoContext.getReport(seoContext.url);
   };
   return (

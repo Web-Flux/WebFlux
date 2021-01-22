@@ -26,13 +26,18 @@ const SEOState = (props) => {
   };
 
   const getReport = async (url) => {
+    console.log("URL" + url);
     setLoading();
     const response = await client.get("/scan", {
       params: {
         site: url,
       },
+      headers: {
+        'content-type': 'text/plain'
+      }
     });
-    dispatch({ type: GET_REPORT, payload: response });
+    console.log(response);
+    dispatch({ type: GET_REPORT, payload: response.data });
   };
 
   return (
