@@ -1,12 +1,10 @@
-/* .background {
-    background-color: #1A202C;
-    height: 100vh;
-    width: 100vw;
-    margin-left: -10px;
-    margin-top: -10px;
-} */
+
 
 .grid{
     margin-left: 80px;
     margin-top: 80px;
+}
+
+.totalScore {
+    margin-top: 2rem;
 }
