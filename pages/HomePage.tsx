@@ -1,5 +1,7 @@
 import React from 'react'
 import clsx from 'clsx';
+import Link from 'next/link';
+
 import { Container } from '@chakra-ui/react';
 
 import  SearchBar from '../components/SearchBar';
@@ -9,7 +11,7 @@ import SearchButton from '../components/SearchButton';
 import styles from "./HomePage.module.css";
 
 const HomePage = () => {
-   
+  
     return (
         <div>
             <Toggle />
@@ -19,7 +21,9 @@ const HomePage = () => {
             <span className={clsx([styles.animated ,styles.animatedPlay, styles.animatedPlayO])}>Optimization.</span>
             </Container>
             <SearchBar />
-            <SearchButton />
+            <Link href="/report">
+           <a> <SearchButton />  </a>
+            </Link>
         </div>
     )
 }
