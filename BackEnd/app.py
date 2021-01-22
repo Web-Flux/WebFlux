@@ -23,17 +23,36 @@ def home():
     except:
         return "Error"
 
-@app.route('/scan', methods=["POST"])
+@app.route('/scan', methods=["GET","POST"])
 def scan():
     if request.method == "POST":
         try:
-            site=request.get_json()['site']
+            site=request.form.get('site')
+            print("Scanning "+str(site))
             Spider_Object=wa.Spider(site)
+            print("Initiating Crawl")
             raw_report=Spider_Object.crawl()
+            print("Crawl Over")
+            print("Sending response")
             report=json.loads(json.dumps(raw_report,indent=4,separators=(',',': ')))
             return report
         except:
-            return "ERROR: API accepts POST requests only."
+            return "Internal Error in processing"
+    elif request.method == "GET":
+        try:
+            site=request.args.get('site')
+            print("Scanning "+str(site))
+            Spider_Object=wa.Spider(site)
+            print("Initiating Crawl")
+            raw_report=Spider_Object.crawl()
+            print("Crawl Over")
+            print("Sending response")
+            report=json.loads(json.dumps(raw_report,indent=4,separators=(',',': ')))
+            return report
+        except:
+            return "Internal Error in processing"
+    else:
+        return "ERROR: API accepts POST or GET requests only."
 
 
 if __name__ == '__main__':
