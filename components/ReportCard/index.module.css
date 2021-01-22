@@ -1,0 +1,19 @@
+.box{
+	font-family: 'Open Sans', sans-serif;
+	background-color: #0f1520;
+	color: white;
+	width: 30vw;
+	height: 20vh;
+	border-radius: 7px;
+	box-shadow: 0px 8px 14px black;
+	text-align: center;
+}
+
+.tickAlign{
+	margin-top: 30px;
+	float: left;
+}
+
+.headingAlign{
+	font-size: 25px;
+}
