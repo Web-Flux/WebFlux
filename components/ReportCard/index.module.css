@@ -10,12 +10,12 @@
 }
 
 .tickAlign{
-	margin-top: 50px;
 	float: left;
-	margin-right: 20px;
+	margin: 3rem 1.2rem;
 }
 
 .headingAlign{
+	margin-top:0.2rem;
 	font-size: 1.2rem;
 }
 
