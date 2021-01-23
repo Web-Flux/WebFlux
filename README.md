@@ -57,4 +57,4 @@ And the Server will kickstart on Port 5000. You can check out the Root to identi
 
 ## 👨‍🏭  Who are we?
 
-The Project was built by [Sarthak Kundra](https://github.com/sarthakkundra), [Saket Upadhyay](https://github.com/Saket-Upadhyay), [Saphal Patro](https://github.com/saphal1998) and [Harsh Mishra](https://github.com/harshcasper).
+The Project was built by [Sarthak Kundra](https://github.com/sarthakkundra), [Karan Sheth](https://github.com/korusuke) and [Harsh Mishra](https://github.com/harshcasper).
